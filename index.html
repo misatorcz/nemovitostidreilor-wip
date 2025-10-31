@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nemovitosti Dreilor</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Nemovitosti Dreilor</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Domů</a></li>
+                <li><a href="#about" class="nav-link">Nemovitosti k pronájmu</a></li>
+                <li><a href="#selles" class="nav-link">Nemovitosti k prodeji</a></li>
+                <li><a href="#services" class="nav-link">Služby</a></li>
+                <li><a href="#reserve" class="nav-link">Rezervovat nemovitost</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section-box">
+            <h2>Domů</h2>
+            <p>Vítejte na stránkách Nemovitosti Dreilor. Nabízíme širokou škálu nemovitostí k pronájmu v různých lokalitách. Naše nemovitosti jsou pečlivě udržovány.</p>
+        </section>
+        <section id="about" class="section-box">
+            <h2>Nemovitosti k pronájmu</h2>
+            <div class="property-grid">
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/garsonka_sklad.png" alt="garsonka_obyvatelna">
+                    <h3>Fort Carson 4470, Fort Carson</h3>
+                    <h5>Obyvatelná garsonka nedaleko Sila</h5>
+                    <div class="price">50.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="garsonka_obyvatelna">Více obrázků</a>
+                    <div id="garsonka_obyvatelna" class="more-images" style="display: none;">
+                        <img src="garsonka_obyvatelna/1.png" alt="Hlavní místnost">
+                        <img src="garsonka_obyvatelna/2.png" alt="Hlavní místnost">
+                        <img src="garsonka_obyvatelna/3.png" alt="Ložnice">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/garsonka.png" alt="garsonka_sklad">
+                    <h3>Fort Carson 4469, Fort Carson</h3>
+                    <h5>Garsonka využívána jako sklad nedaleko Sila</h5>
+                    <div class="price">50.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="garsonka_sklad">Více obrázků</a>
+                    <div id="garsonka_sklad" class="more-images" style="display: none;">
+                        <img src="garsonka_sklad/1.png" alt="Prostor">
+                        <img src="garsonka_sklad/2.png" alt="Prostor">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/dilna_calton.png" alt="Garáž Prickle Pine">
+                    <h3>Prickle Pine 4596, Las Venturas</h3>
+                    <h5>Prostorná garáž v Prickle Pine vedle benzínové pumpy s několika zvedáky</h5>
+                    <div class="price">50.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="prickle_garaz">Více obrázků</a>
+                    <div id="prickle_garaz" class="more-images" style="display: none;">
+                        <img src="prickle_garaz/Pricklepine1.png" alt="Chodba">
+                        <img src="prickle_garaz/Pricklepine2.png" alt="Chodba">
+
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/calton_heights.png" alt="Garáž Calton Heights">
+                    <h3>Calton Heights 4096, San Fierro</h3>
+                    <h5>Prostorná garáž v San Fierru v oblasti Calton Heights</h5>
+                    <div class="price">70.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="calton_heights">Více obrázků</a>
+                    <div id="calton_heights" class="more-images" style="display: none;">
+                        <img src="calton_heights/calton1.png" alt="calton_heights">
+                        <img src="calton_heights/calton2.png" alt="calton_heights">
+
+
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/bar_bayside.png" alt="bar_bayside">
+                    <h3>Bar Bayside 5395, Bayside</h3>
+                    <h5>Bar v Bayside na rohu</h5>
+                    <div class="price">50.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="bar_bayside">Více obrázků</a>
+                    <div id="bar_bayside" class="more-images" style="display: none;">
+                        <img src="bar_bayside/bayside_bar1.png" alt="Bar">
+                        <img src="bar_bayside/bayside_bar2.png" alt="Bar">
+                        <img src="bar_bayside/bayside_bar3.png" alt="Bar">
+                        <img src="bar_bayside/bayside_bar4.png" alt="Bar">
+                        <img src="bar_bayside/bayside_bar5.png" alt="Bar">
+
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/cluckin_ls.png" alt="cluckin_ls">
+                    <h3>Cluckin Bell 154, Los Santos</h3>
+                    <h5>Fastfoodový řetězec Cluckin Bell v městě Los Santos</h5>
+                    <div class="price">25.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="cluckin_ls">Více obrázků</a>
+                    <div id="cluckin_ls" class="more-images" style="display: none;">
+                        <img src="cluckin_ls/cluckin1.png" alt="cluckin_ls">
+                        <img src="cluckin_ls/cluckin2.png" alt="cluckin_ls">
+                        <img src="cluckin_ls/cluckin3.png" alt="cluckin_ls">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/farma_ls.png" alt="Dům na farmě">
+                    <h3>Beacon Hill, Flint County 216</h3>
+                    <h5>Moderní chatka s vlastní kanceláří na farmě nedaleko Los Santos</h5>
+                    <div class="price">45.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="farma_ls">Více obrázků</a>
+                    <div id="farma_ls" class="more-images" style="display: none;">
+                        <img src="farma_ls/farma1.png" alt="farma_ls">
+                        <img src="farma_ls/farma2.png" alt="farma_ls">
+                        <img src="farma_ls/farma3.png" alt="farma_ls">
+                        <img src="farma_ls/farma4.png" alt="farma_ls">
+                        <img src="farma_ls/farma5.png" alt="farma_ls">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/ap_shop.png" alt="ap_shop">
+                    <h3>Angel Pine 2503, Angel Pine</h3>
+                    <h5>Obchod v krásné lokalitě Angel Pine</h5>
+                    <div class="price">25.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="ap_shop">Více obrázků</a>
+                    <div id="ap_shop" class="more-images" style="display: none;">
+                        <img src="ap_shop/ap_shop1.png" alt="ap_shop">
+                        <img src="ap_shop/ap_shop2.png" alt="ap_shop">
+                        <img src="ap_shop/ap_shop3.png" alt="ap_shop">
+                        <img src="ap_shop/ap_shop4.png" alt="ap_shop">
+                    </div>
+                </div>
+                <div class="property-item unavailable">
+                    <img src="Nahledovky/K PRONÁJMU/dum_fc.png" alt="dum_fc">
+                    <h3>Fort Carson 1992, Fort Carson</h3>
+                    <h5>Rodinný dům ve Fort Carsonu</h5>
+                    <div class="price">70.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3>Nedostupné</h3>
+                    <a href="#" class="toggle-images" data-images="dum_fc">Více obrázků</a>
+                    <div id="dum_fc" class="more-images" style="display: none;">
+                        <img src="dum_fc/dum_fc1.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc2.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc3.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc4.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc5.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc6.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc7.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc8.png" alt="dum_fc">
+                        <img src="dum_fc/dum_fc9.png" alt="dum_fc">
+                    </div>
+                </div>
+                <div class="property-item unavailable">
+                    <img src="Nahledovky/K PRONÁJMU/vila_bayside.png" alt="bayside_vila">
+                    <h3>Vila Bayside 4387, Bayside </h3>
+                    <h5>Vila Bayside v ohraničeném prostoru</h5>
+                    <div class="price">100.000,- Kč týdně</div>
+                    <h3>Zabezpečení: Ohraničený objekt, hlídači</h3>
+                    <h3>Nedostupné</a></h3>
+                    <a href="#" class="toggle-images" data-images="bayside_vila">Více obrázků</a>
+                    <div id="bayside_vila" class="more-images" style="display: none;">
+                        <img src="bayside_vila/vila1.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila2.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila3.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila4.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila5.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila6.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila7.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila8.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila9.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila10.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila11.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila12.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila13.png" alt="bayside_vila">
+                        <img src="bayside_vila/vila14.png" alt="bayside_vila">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/dill_shop.png" alt="dill_shop">
+                    <h3>Obchod Dillmore 4093, Dillmore </h3>
+                    <h5>Vlastní obchod se skladovým prostorem</h5>
+                    <div class="price">50.000,- Kč týdně</div>
+                    <h3>Zabezpečení: hlídač</h3>
+                    <h3>Dostupné</a></h3>
+                    <a href="#" class="toggle-images" data-images="dill_shop">Více obrázků</a>
+                    <div id="dill_shop" class="more-images" style="display: none;">
+                        <img src="dill_shop/dill_shop1.png" alt="dill_shop">
+                        <img src="dill_shop/dill_shop2.png" alt="dill_shop">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/sklad_fc.png" alt="sklad_silo">
+                    <h3>Sklad 462, Fort Carson</h3>
+                    <h5>Prostorný sklad nedaleko sila</h5>
+                    <div class="price">100.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="sklad_silo">Více obrázků</a>
+                    <div id="sklad_silo" class="more-images" style="display: none;">
+                        <img src="sklad_silo/sklad_silo1.png" alt="sklad_silo">
+                        <img src="sklad_silo/sklad_silo2.png" alt="sklad_silo">
+                        <img src="sklad_silo/sklad_silo3.png" alt="sklad_silo">
+                        <img src="sklad_silo/sklad_silo4.png" alt="sklad_silo">
+                    </div>
+                </div>
+                <div class="property-item unavailable">
+                    <img src="Nahledovky/K PRONÁJMU/sklenik_mg.png" alt="sklenik_mg">
+                    <h3>Skleník 2081, Montgomery</h3>
+                    <h5>Skleník v Montgomery vedle výjezdové stanice HZS</h5>
+                    <div class="price">30.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3>Nedostupné</a></h3>
+                    <a href="#" class="toggle-images" data-images="sklenik_mg">Více obrázků</a>
+                    <div id="sklenik_mg" class="more-images" style="display: none;">
+                        <img src="sklenik_mg/sklenik_mg1.png" alt="sklenik_mg">
+                        <img src="sklenik_mg/sklenik_mg2.png" alt="sklenik_mg">
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="Nahledovky/K PRONÁJMU/dilna_jatka.png" alt="jatka_dilna">
+                    <h3>Dílna Whitewood Estates 5374, Las Venturas</h3>
+                    <h5>Dílna nedaleko Jatek Las Venturas</h5>
+                    <div class="price">50.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3> <a href="#reserve" id="dostupné"> Dostupné k pronájmu </a></h3>
+                    <a href="#" class="toggle-images" data-images="jatka_dilna">Více obrázků</a>
+                    <div id="jatka_dilna" class="more-images" style="display: none;">
+                        <img src="dilna_jatka/dilna1.png" alt="jatka_dilna">
+                        <img src="dilna_jatka/dilna2.png" alt="jatka_dilna">
+                        <img src="dilna_jatka/dilna3.png" alt="jatka_dilna">
+                    </div>
+                </div>
+                <div class="property-item unavailable">
+                    <img src="Nahledovky/K PRONÁJMU/sklenik_psa.png" alt="sklenik_psa">
+                    <h3>Skleník 2086, Montgomery</h3>
+                    <h5>Skleník v Montgomery za stanicí PSA</h5>
+                    <div class="price">30.000,- Kč týdně</div>
+                    <h3>Zabezpečení: žádné</h3>
+                    <h3>Nedostupné</h3>
+                    <a href="#" class="toggle-images" data-images="sklenik_psa">Více obrázků</a>
+                    <div id="sklenik_psa" class="more-images" style="display: none;">
+                        <img src="sklenik_psa/sklenik1.png" alt="sklenik_psa">
+                        <img src="sklenik_psa/sklenik2.png" alt="sklenik_psa">
+                    </div>
+                </div>
+                    </div>
+                    </section> 
+    <section id="selles" class="section-box">
+            <h2>Nemovitosti k prodeji</h2>
+        <div class="property-grid">
+            <div class="property-item">
+                    <img src="nemovitosti_prodej/Kancelář Dillmore 1400/nahled.png" alt="kancl_dill">
+                        <h3>Kancelář, Dillmore 1400</h3>
+                        <h5>Kancelář v kancelářské budově v Dillmore</h5>
+                        <div class="price">500.000,- Kč</div>
+                        <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+                        <a href="#" class="toggle-images" data-images="kancl_dill">Více obrázků</a>
+                        <div id="kancl_dill" class="more-images" style="display: none;">
+                            <img src="nemovitosti_prodej/Kancelář Dillmore 1400/int1.png" alt="kancl_dill">
+                            <img src="nemovitosti_prodej/Kancelář Dillmore 1400/int2.png" alt="kancl_dill">
+                            <img src="nemovitosti_prodej/Kancelář Dillmore 1400/int3.png" alt="kancl_dill">
+                </div>
+            </div>
+            <div class="property-item">
+                <img src="nemovitosti_prodej/bar_bayside/nahled.png" alt="bar_bayside">
+                    <h3>Bar Bayside 5395, Bayside</h3>
+                    <h5>Bar v Bayside na rohu ulice</h5>
+                    <div class="price">2.785.000,- Kč</div>
+                    <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+                    <a href="#" class="toggle-images" data-images="bar_bayside">Více obrázků</a>
+                    <div id="bar_bayside" class="more-images" style="display: none;">
+                </div>
+            </div>
+            <div class="property-item">
+                <img src="nemovitosti_prodej/Verdant Bluffs 233/nahled.png" alt="Verdant Bluffs">
+                <h3>Garáž Verdant Bluffs 233, Los Santos</h3>
+                <h5>Garáž nedaleko Persing Square v Los Santos</h5>
+                <div class="price">1.650.000,- Kč</div>
+                <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+                <a href="#" class="toggle-images" data-images="Verdant">Více obrázků</a>
+                <div id="Verdant" class="more-images" style="display: none;">
+                    <img src="nemovitosti_prodej/Verdant Bluffs 233/int1.png" alt="Verdant">
+            </div>
+        </div>
+        <div class="property-item">
+            <img src="nemovitosti_prodej/Temple 245/nahled.png" alt="Temple">
+            <h3>Dům Temple 245, Los Santos</h3>
+            <h5>Rodinný dům v Los Santos</h5>
+            <div class="price">1.550.000,- Kč</div>
+            <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+            <a href="#" class="toggle-images" data-images="Temple">Více obrázků</a>
+            <div id="Verdant" class="more-images" style="display: none;">
+                <img src="nemovitosti_prodej/Temple 245/int1.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int2.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int3.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int4.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int5.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int6.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int7.png" alt="Temple">
+                <img src="nemovitosti_prodej/Temple 245/int8.png" alt="Temple">
+        </div>
+    </div>
+    <div class="property-item">
+        <img src="nemovitosti_prodej/Market 1730/nahled.png" alt="Market 1730">
+        <h3>Dílna Market 1730, Los Santos</h3>
+        <h5>Velká dílna nedaleko nemocnice v oblasti Market v Los Santos</h5>
+        <div class="price">2.750.000,- Kč</div>
+        <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+        <a href="#" class="toggle-images" data-images="Market 1730">Více obrázků</a>
+        <div id="Market 1730" class="more-images" style="display: none;">
+            <img src="nemovitosti_prodej/Market 1730/int.png" alt="Market 1730">
+            <img src="nemovitosti_prodej/Market 1730/int2.png" alt="Market 1730">
+            <img src="nemovitosti_prodej/Market 1730/int3.png" alt="Market 1730">
+            <img src="nemovitosti_prodej/Market 1730/int4.png" alt="Market 1730">
+            <img src="nemovitosti_prodej/Market 1730/int5.png" alt="Market 1730">
+    </div>
+</div>
+<div class="property-item">
+    <img src="nemovitosti_prodej/Market 1814/nahled.png" alt="Market 1814">
+    <h3>Bar Market 1814, Los Santos</h3>
+    <h5>Bar nedaleko nemocnice v oblasti Market v Los Santos</h5>
+    <div class="price">1.850.000,- Kč</div>
+    <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+    <a href="#" class="toggle-images" data-images="Market 1814">Více obrázků</a>
+    <div id="Market 1814" class="more-images" style="display: none;">
+        <img src="nemovitosti_prodej/Market 1814/int1.png" alt="Market 1814">
+        <img src="nemovitosti_prodej/Market 1814/int2.png" alt="Market 1814">
+        <img src="nemovitosti_prodej/Market 1814/int3.png" alt="Market 1814">
+</div>
+</div>
+<div class="property-item">
+    <img src="nemovitosti_prodej/Market 2374/nahled.png" alt="Market 2374">
+    <h3>Garáž Market 2374, Los Santos</h3>
+    <h5>Garáž nedaleko nemocnice v oblasti Market v Los Santos</h5>
+    <div class="price">1.750.000,- Kč</div>
+    <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+    <a href="#" class="toggle-images" data-images="Market 2374">Více obrázků</a>
+    <div id="Market 2374" class="more-images" style="display: none;">
+        <img src="nemovitosti_prodej/Market 2374/int1.png" alt="Market 2374">
+        <img src="nemovitosti_prodej/Market 2374/int2.png" alt="Market 2374">
+</div>
+</div>
+<div class="property-item">
+    <img src="nemovitosti_prodej/Bayside 4742/nahled.png" alt="Bayside 4742">
+    <h3>Garsonka Bayside 4742, Bayside</h3>
+    <h5>Obytná garsonka v Bayside</h5>
+    <div class="price">500.000,- Kč</div>
+    <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+    <a href="#" class="toggle-images" data-images="Bayside 4742">Více obrázků</a>
+    <div id="Bayside 4742" class="more-images" style="display: none;">
+        <img src="nemovitosti_prodej/Bayside 4742/int1.png" alt="Bayside 4742">
+        <img src="nemovitosti_prodej/Bayside 4742/int2.png" alt="Bayside 4742">
+        <img src="nemovitosti_prodej/Bayside 4742/int3.png" alt="Bayside 4742">
+</div>
+</div>
+<div class="property-item">
+    <img src="nemovitosti_prodej/Ocean Docks 4522/nahled.png" alt="Doky">
+    <h3>Dílna Ocean Docks 4522, Los Santos</h3>
+    <h5>Prostorná dílna v Ocean Docks</h5>
+    <div class="price">3.100.000,- Kč</div>
+    <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+    <a href="#" class="toggle-images" data-images="Doky">Více obrázků</a>
+    <div id="Doky" class="more-images" style="display: none;">
+        <img src="nemovitosti_prodej/Ocean Docks 4522/int1.png" alt="Doky">
+        <img src="nemovitosti_prodej/Ocean Docks 4522/int2.png" alt="Doky">
+        <img src="nemovitosti_prodej/Ocean Docks 4522/int3.png" alt="Doky">
+        <img src="nemovitosti_prodej/Ocean Docks 4522/int4.png" alt="Doky">
+        <img src="nemovitosti_prodej/Ocean Docks 4522/int5.png" alt="Doky">
+</div>
+</div>
+<div class="property-item">
+    <img src="nemovitosti_prodej/Octane Springs 3640/nahled.png" alt="Octane">
+    <h3>Dvoupatrový starší apartmán nedaleko Lomu Las Venturas</h3>
+    <h5>Garáž nedaleko Persing Square v Los Santos</h5>
+    <div class="price">1.650.000,- Kč</div>
+    <h3><a href="#reserve" id="prodeji">K prodeji</a></h3>
+    <a href="#" class="toggle-images" data-images="Verdant">Více obrázků</a>
+    <div id="Verdant" class="more-images" style="display: none;">
+        <img src="nemovitosti_prodej/Verdant Bluffs 233/int1.png" alt="Verdant">
+</div>
+    </section>
+
+    </section>
+    <section id="services" class="section-box">
+        <h2>Nabízené služby</h2>
+        <p>Sháníte zprostředkovatele, který vám zařídí pronájem vaší nemovitosti? Chcete mít vaši nemovitost na této stránce? Neváhejte nás kontaktovat a domluvíme se na podmínkách!</p>
+        <p>Při pronájmu jakékoliv naší nemovitosti máte 10% slevu na hlídače u společnosti <a href="https://artic.leosight.cz/guard24.ic/" id="Guard24">Guard24</a> </p>
+    
+    </section>
+        <section id="reserve" class="section-box">
+            <h2>Rezervovat nemovitost</h2>
+            <iframe src="https://docs.google.com/forms/d/15AbBQImYFtU78hlsdO4qoH7kCvw4Y65qdCMU3bPq6tY/viewform" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Načítám…</iframe>
+        </section>
+        <section id="contact" class="section-box">
+            <h2>Kontakt</h2>
+            <p><a href="https://artic.leosight.cz/post.ic/" id="post">Post.ic: jack.dreilor@post.ic</a>
+            <p id="tel">Telefonní číslo: 614-444</p>
+            <p><a href="https://artic.leosight.cz/iris.ic/jackdreilor" id="Iris">Iris: @jackdreilor</a> </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nemovitosti Dreilor spravováno Jack Dreilor.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+/* Global Styles */
+body {
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0); /* Lehká průhlednost pozadí */
+    background-blend-mode: darken;
+    color: #ECF0F1;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #ECF0F1
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #020100;
+    animation: slideInFromTop 1s ease-in-out;
+}
+
+header h1 {
+    margin: 0;
+    color: #ECF0F1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ECF0F1;   /*text nav*/
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ECF0F1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+
+.section-box { 
+    background-color: rgba(0, 0, 0,0.72);
+    color: #ECF0F1;   /*text*/
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: 2px solid #020100;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.section-box h2 {
+    border-bottom: 2px solid #020100;
+    padding-bottom: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.property-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.property-item {
+    background-color: #2C3E50;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.property-item:hover {
+    transform: scale(1.05);
+}
+
+.property-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.property-item h3 {
+    color: #ECF0F1;
+}
+
+.property-item .price {
+    color: #27AE60;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.toggle-images {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ECF0F1;
+    text-decoration: none;
+    border: 2px solid #ECF0F1;
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+.toggle-images:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #95A5A6;
+    padding: 20px;
+    border-top: 2px solid #020100;
+    animation: slideInFromBottom 1s ease-in-out;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #2C3E50 ; /* Tmavší tyrkysová */
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.modal-content img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #cfcccc;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+    color: #ECF0F1;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Efekt přiblížení pro navigační odkazy */
+.nav-link {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
+/* Styl pro aktivní sekci */
+.section-box {
+    scroll-margin-top: 100px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .property-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .property-item {
+        margin-bottom: 20px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+/* Guard24 */
+#Guard24 {
+    color: #16A085;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#dostupné {
+    color: #27AE60;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+#nedostupné {
+    color: #881600;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+#Iris {
+    color: rgb(156, 17, 199);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#post {
+    color: rgb(13, 84, 177);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#tel {
+    color: #ECF0F1;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#prodeji {
+    color: #ECF0F1;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
